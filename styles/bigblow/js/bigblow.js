@@ -45,7 +45,7 @@ $(function() {
 
 // generate contents of minitoc
 function generateMiniToc(divId) {
-    $('#minitoc').empty().append('<h2>In this section</h2>');
+    $('#minitoc').empty().append('<h2>Szekció alpontok</h2>');
     $('#' + divId).find('h3').each(function(i) {
         $("#minitoc").append("<a href='#" + $(this).attr("id") + "'>"
                              + $(this).text() + "</a>");
@@ -266,7 +266,7 @@ $(function() {
 });
 
 $(function() {
-    $('<div id="toTop" class="dontprint"><span>^ Back to Top</span></div>').appendTo('body');
+    $('<div id="toTop" class="dontprint"><span>^ Vissza fentre</span></div>').appendTo('body');
 
     $(window).scroll(function() {
         if ($(this).scrollTop() != 0) {
